@@ -4,7 +4,7 @@ import JobsCard from "./JobsCard";
 import { useEffect } from "react";
 import { setSearchedQuery } from "../../redux/jobSlice";
 import useGetAllJobs from "../../hooks/useGetAllJobs";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 
 const Browse = () => {
   useGetAllJobs();
@@ -23,7 +23,7 @@ const Browse = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-10">
         {/* Title Animation */}
-        <motion.h1
+        <Motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -31,14 +31,14 @@ const Browse = () => {
         >
           Search Result :{" "}
           <span className="text-[#0ea5e9]">({allJobs.length})</span>
-        </motion.h1>
+        </Motion.h1>
 
         {/* Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {allJobs.length > 0 ? (
               allJobs.map((job, index) => (
-                <motion.div
+                <Motion.div
                   key={job._id}
                   layout
                   initial={{ opacity: 0, scale: 0.8, y: 30 }}
@@ -55,16 +55,16 @@ const Browse = () => {
                   }}
                 >
                   <JobsCard job={job} />
-                </motion.div>
+                </Motion.div>
               ))
             ) : (
-              <motion.p
+              <Motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="col-span-full text-center text-gray-500 mt-10"
               >
                 No jobs found at the moment.
-              </motion.p>
+              </Motion.p>
             )}
           </AnimatePresence>
         </div>
