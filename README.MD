@@ -1,4 +1,6 @@
-## 🚀 RadiAntiX Job Portal
+<div align="center">
+
+# 🚀 RadiAntiX Job Portal
 
 <h3>
   <em>A Production-Ready Full Stack MERN Job Platform</em>
@@ -6,7 +8,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/MERN-Stack-00C853?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Authentication-JWT-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Auth-JWT-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb" />
   <img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
 </p>
@@ -16,7 +18,7 @@
   &nbsp;•&nbsp;
   <a href="#-features"><strong>✨ Features</strong></a>
   &nbsp;•&nbsp;
-  <a href="#-tech-stack"><strong>🛠️ Tech Stack</strong></a>
+  <a href="#-tech-stack"><strong>🛠 Tech Stack</strong></a>
   &nbsp;•&nbsp;
   <a href="#-project-structure"><strong>📁 Structure</strong></a>
 </p>
@@ -25,50 +27,50 @@
 
 ---
 
-## 🎯 Overview
+# 🎯 Overview
 
-RadiAntiX is a **full-stack job portal application** built using the MERN stack.  
-It simulates a real-world production environment with secure authentication, role-based access control, scalable REST APIs, and modern UI design.
+RadiAntiX is a **production-style full-stack job portal** built using the MERN stack.  
+It demonstrates secure authentication, scalable backend architecture, and real-world application flow.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 👤 Authentication System
+## 👤 Authentication System
 - Role-based login (Admin / Recruiter / Job Seeker)
 - JWT-based secure authentication
-- Password hashing with Bcrypt
+- Password hashing using Bcrypt
 - Protected routes with middleware
 
-### 💼 Job Management
+## 💼 Job Management
 - Post / Edit / Delete Jobs
 - Apply for jobs
 - Resume upload system
 - Application tracking
 
-### 📊 Admin & Recruiter Dashboard
+## 📊 Admin & Recruiter Dashboard
 - Manage users
 - View job applications
 - Control job listings
 - Monitor platform activity
 
-### 🔎 Advanced Search
+## 🔎 Advanced Search
 - Keyword filtering
 - Category-based filtering
-- Clean card UI design
+- Clean card-based UI design
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠 Tech Stack
 
-### 🔹 Frontend
+## 🔹 Frontend
 - React.js
 - Tailwind CSS
 - Axios
 - React Router DOM
-- Redux (if used)
+- Redux (if implemented)
 
-### 🔹 Backend
+## 🔹 Backend
 - Node.js
 - Express.js
 - MongoDB
@@ -78,7 +80,7 @@ It simulates a real-world production environment with secure authentication, rol
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```bash
 JOBS
@@ -104,101 +106,100 @@ JOBS
 ├── package.json
 └── README.md
 
+```
+---
 
-##⚙️ Environment Variables
+# ⚙️ Environment Variables
 
-Create a .env file in root:
+Create a `.env` file in the root directory and add the following:
 
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+---
 
-##🚀 Getting Started
-1️⃣ Clone Repository
+# 🚀 Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/Pintu-Kumar-1709/Job-Portal-Project.git
+2️⃣ Navigate to Project Directory
 cd JOBS
-
-##2️⃣ Install Dependencies
-# Root install
+3️⃣ Install Dependencies
+# Install root dependencies
 npm install
 
-# Backend
+# Install backend dependencies
 cd backend
 npm install
 
-# Frontend
+# Install frontend dependencies
 cd ../frontend
 npm install
+4️⃣ Start Development Servers
+# Start Backend
+nodemon index.js
 
-##3️⃣ Run Project
+# Start Frontend
+npm run dev
+5️⃣ Open in Browser
+http://localhost:5173
+3️⃣ Run Project
+</div>
 # Backend
 nodemon index.js
 
 # Frontend
 npm run dev
-
-##📸 Application Preview
-
-🚧 Screenshots will be added soon.
-Meanwhile, here’s what the interface includes:
-
-##🏠 Home Page
-
+📸 Application Preview
+<div align="center">
+🚧 Screenshots will be added soon
+</div>
+🏠 Home Page
 Modern hero section with CTA
 
 Featured job listings
 
-Animated UI elements (Framer Motion)
+Smooth animations
 
-Responsive layout for all devices
+Fully responsive layout
 
-##💼 Job Listings Page
+💼 Job Listings Page
+Advanced filtering
 
-Advanced job filtering
-
-Keyword-based search
+Keyword search
 
 Pagination support
 
-Clean card-based UI design
-
-##👤 User Dashboard
-
+👤 User Dashboard
 Profile management
 
 Applied jobs tracking
 
-Resume upload & update system
+Resume upload & update
 
-Secure protected routes
-
-##🛠 Recruiter Panel
-
+🛠 Recruiter Panel
 Post / Edit / Delete Jobs
 
-View applicant details
+Manage applications
 
-Manage job status
-
-#📊 Admin Dashboard
-
-Platform analytics overview
-
+📊 Admin Dashboard
 User management
 
 Recruiter approvals
 
-System-level control
+Platform analytics
 
-🔗 Live URL: Coming Soon  
-
+🌐 Live Deployment
+🔗 Live URL: Coming Soon
 
 📜 License
-
 This project is licensed under the MIT License.
 
 👨‍💻 Author
 <div align="center">
 Pintu Kumar — MERN Stack Developer
 <a href="https://github.com/Pintu-Kumar-1709"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.linkedin.com/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> </div>
-<div align="center"> <sub>Built with ❤️ using MERN Stack</sub> </div> ```
+<div align="center"> <sub>Built with ❤️ using MERN Stack</sub> </div> 
