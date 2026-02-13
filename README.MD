@@ -117,89 +117,154 @@ Create a `.env` file in the root directory and add the following:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 ---
 
-# 🚀 Installation
+### Installation
 
-### 1️⃣ Clone the Repository
+1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/Pintu-Kumar-1709/Job-Portal-Project.git
-2️⃣ Navigate to Project Directory
-cd JOBS
-3️⃣ Install Dependencies
-# Install root dependencies
-npm install
+git clone 
+```
 
-# Install backend dependencies
-cd backend
-npm install
+2️⃣ **Navigate to project directory**
 
-# Install frontend dependencies
-cd ../frontend
-npm install
-4️⃣ Start Development Servers
-# Start Backend
-nodemon index.js
+```bash
+cd Portfolio
+```
 
-# Start Frontend
+3️⃣ **Install dependencies**
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+4️⃣ **Start development server**
+
+```bash
 npm run dev
-5️⃣ Open in Browser
+```
+
+5️⃣ **Open in browser**
+
+```
 http://localhost:5173
-3️⃣ Run Project
-</div>
-# Backend
+```
+
+6️⃣ **Run Backend Server**
+
+``` 
+Backend
 nodemon index.js
+```
 
 # Frontend
+```
 npm run dev
-📸 Application Preview
+```
+---
+
+
+
+# 📸 Application Preview
+
 <div align="center">
-🚧 Screenshots will be added soon
+
+## 🚧 Screenshots Coming Soon
+
 </div>
-🏠 Home Page
-Modern hero section with CTA
 
-Featured job listings
+---
 
-Smooth animations
+# 🏠 Home Page
 
-Fully responsive layout
+- Modern hero section with strong CTA  
+- Featured job listings  
+- Smooth UI animations  
+- Fully responsive layout  
 
-💼 Job Listings Page
-Advanced filtering
+---
 
-Keyword search
+# 💼 Job Listings Page
 
-Pagination support
+- Advanced filtering options  
+- Keyword-based search  
+- Pagination support  
+- Clean card-based UI design  
 
-👤 User Dashboard
-Profile management
+---
 
-Applied jobs tracking
+# 👤 User Dashboard
 
-Resume upload & update
+- Profile management  
+- Applied jobs tracking  
+- Resume upload & update system  
+- Secure protected routes  
 
-🛠 Recruiter Panel
-Post / Edit / Delete Jobs
+---
 
-Manage applications
+# 🛠 Recruiter Panel
 
-📊 Admin Dashboard
-User management
+- Post / Edit / Delete Jobs  
+- View applicant details  
+- Manage job status  
 
-Recruiter approvals
+---
 
-Platform analytics
+# 📊 Admin Dashboard
+
+- User management  
+- Recruiter approvals  
+- Platform analytics overview  
+- System-level controls  
+
+---
+
 
 🌐 Live Deployment
+<br/>
 🔗 Live URL: Coming Soon
 
 📜 License
 This project is licensed under the MIT License.
 
-👨‍💻 Author
-<div align="center">
-Pintu Kumar — MERN Stack Developer
-<a href="https://github.com/Pintu-Kumar-1709"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.linkedin.com/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> </div>
-<div align="center"> <sub>Built with ❤️ using MERN Stack</sub> </div> 
+---
+### 👨‍💻 Author
+---
+
+
+## Pintu Kumar — MERN Stack Developer
+
+  <a href="mailto:mrkumarrr12@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/Pintu-Kumar-1709">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<a href="https://www.linkedin.com/in/pintu-kumar-12x">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<a href="https://www.instagram.com/babu_sajan_12">
+    <img src="https://img.shields.io/badge/Instagram-D14836?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+
+<a href="https://twitter.com/babu_sajan_12">
+<img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white" />
+</a>
+
+<a href="https://www.facebook.com/Mrkumar.Sajan.12x">
+<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+</a>
+
+---
+
+<div align="center"> 
+
+<h3>Built with ❤️ using MERN Stack</h3> </div> 
