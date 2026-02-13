@@ -90,18 +90,7 @@ Optimized database schema
 📁 Project Structure
 
 ```bash
-RadiAntiX
-├── frontend
-│   ├── public
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── hooks
-│   │   ├── context
-│   │   ├── utils
-│   │   └── App.jsx
-│   └── package.json
-│
+JOBS
 ├── backend
 │   ├── config
 │   ├── controllers
@@ -109,11 +98,25 @@ RadiAntiX
 │   ├── models
 │   ├── routes
 │   ├── uploads
-│   ├── index.js
+│   └── index.js
+│
+├── frontend
+│   ├── public
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── hooks
+│   │   ├── context
+│   │   └── utils
 │   └── package.json
 │
+|
 ├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
 └── README.md
+
 ```
 
 
