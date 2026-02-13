@@ -91,20 +91,31 @@ Optimized database schema
 
 RadiAntiX/
 │
-├── client/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   └── utils/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── context/
+│   │   ├── utils/
+│   │   └── App.jsx
+│   │
+│   └── package.json
 │
-├── server/
+├── backend/
+│   ├── config/
 │   ├── controllers/
-│   ├── routes/
-│   ├── models/
 │   ├── middleware/
-│   └── config/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── index.js
+│   └── package.json
 │
+├── .env
 └── README.md
+
 
 🔑 Environment Variables
 
