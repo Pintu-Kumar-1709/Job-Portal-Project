@@ -7,9 +7,8 @@ const ProtectedRoute = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Agar user login nahi hai ya uska role 'recruiter' nahi hai
     if (!user || user.role !== "recruiter") {
-      navigate("/"); // Redirect to home
+      navigate("/");
     }
   }, [user, navigate]);
 
