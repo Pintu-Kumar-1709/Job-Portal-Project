@@ -13,7 +13,7 @@ import useGetCompanyById from "../../hooks/useGetCompanyById";
 
 const CompanySetup = () => {
   const params = useParams();
-  useGetCompanyById(params.id)
+  useGetCompanyById(params.id);
   const [input, setInput] = useState({
     name: "",
     description: "",
@@ -66,7 +66,7 @@ const CompanySetup = () => {
             "Content-Type": "multipart/form-data",
           },
           withCredentials: true,
-        }
+        },
       );
       if (res.data.success) {
         toast.success(res.data.message);
@@ -91,11 +91,8 @@ const CompanySetup = () => {
     <div className="min-h-screen bg-muted/30">
       <Navbar />
 
-      {/* PAGE CONTAINER */}
       <div className="max-w-4xl mx-auto px-4 mt-5 mb-20">
-        {/* CARD */}
         <div className="bg-background border border-border rounded-2xl shadow-xl px-10 py-12">
-          {/* HEADER */}
           <div className="flex items-center gap-4 mb-10">
             <Button
               onClick={() => navigate("/admin/companies")}
@@ -115,9 +112,7 @@ const CompanySetup = () => {
             </div>
           </div>
 
-          {/* FORM */}
           <form onSubmit={submitHandler} className="space-y-10">
-            {/* INPUT GRID */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
               <div className="space-y-2">
                 <Label>Company Name</Label>
@@ -160,7 +155,6 @@ const CompanySetup = () => {
               </div>
             </div>
 
-            {/* LOGO UPLOAD */}
             <div className="space-y-4">
               <Label>Company Logo</Label>
 
@@ -186,7 +180,6 @@ const CompanySetup = () => {
               </div>
             </div>
 
-            {/* ACTION */}
             <div className="flex justify-end pt-6">
               <Button
                 type="submit"
