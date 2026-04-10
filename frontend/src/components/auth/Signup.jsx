@@ -1,4 +1,3 @@
-
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../shared/Navbar";
 import { Label } from "@/components/ui/label";
@@ -99,7 +98,6 @@ const Signup = () => {
 
             <CardContent>
               <form onSubmit={submitHandler} className="space-y-5">
-                {/* Full Name */}
                 <div className="space-y-1">
                   <Label className="text-gray-300">Full Name</Label>
                   <Input
@@ -114,7 +112,6 @@ const Signup = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {/* Email */}
                   <div className="space-y-1">
                     <Label className="text-gray-300">Email</Label>
                     <Input
@@ -127,7 +124,7 @@ const Signup = () => {
                       className="bg-[#1a1a1a] border-gray-700 h-11"
                     />
                   </div>
-                  {/* Phone */}
+
                   <div className="space-y-1">
                     <Label className="text-gray-300">Phone Number</Label>
                     <Input
@@ -142,7 +139,6 @@ const Signup = () => {
                   </div>
                 </div>
 
-                {/* Password */}
                 <div className="space-y-1">
                   <Label className="text-gray-300">Password</Label>
                   <Input
@@ -156,7 +152,6 @@ const Signup = () => {
                   />
                 </div>
 
-                {/* Role Selection */}
                 <div className="space-y-2">
                   <Label className="text-gray-300">Registering As :</Label>
                   <RadioGroup
@@ -191,7 +186,6 @@ const Signup = () => {
                   </RadioGroup>
                 </div>
 
-                {/* Profile Upload */}
                 <div className="space-y-1">
                   <Label className="text-gray-300">Upload Profile Image</Label>
                   <Input

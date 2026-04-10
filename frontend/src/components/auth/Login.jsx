@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Navbar from "../shared/Navbar";
 import { Label } from "@/components/ui/label";
@@ -81,7 +80,6 @@ const Login = () => {
 
             <CardContent>
               <form onSubmit={submitHandler} className="space-y-6">
-                {/* Email */}
                 <div className="space-y-2">
                   <Label className="text-gray-300">Email Address</Label>
                   <Input
@@ -95,7 +93,6 @@ const Login = () => {
                   />
                 </div>
 
-                {/* Password */}
                 <div className="space-y-2">
                   <Label className="text-gray-300">Password</Label>
                   <Input
@@ -109,7 +106,6 @@ const Login = () => {
                   />
                 </div>
 
-                {/* Role Selection */}
                 <div className="space-y-3">
                   <Label className="text-gray-300">Login As :</Label>
                   <RadioGroup
@@ -144,7 +140,6 @@ const Login = () => {
                   </RadioGroup>
                 </div>
 
-                {/* Login Button */}
                 <Button
                   type="submit"
                   className="w-full h-12 bg-[#088F8F] hover:bg-[#077b7b] text-white font-bold text-lg transition-all active:scale-95"
