@@ -9,11 +9,9 @@ const jobSlice = createSlice({
     searchJobByText: "",
     allAppliedJobs: [],
     searchedQuery:"",
-    // additional state properties can be added here
     
   },
   reducers: {
-    // Action to set all jobs
     setAllJobs: (state, action) => {
       state.allJobs = action.payload;
     },
@@ -32,7 +30,6 @@ const jobSlice = createSlice({
     setSearchedQuery:(state,action) => {
       state.searchedQuery = action.payload
     }
-    // additional reducers can be added here
     
   },
 });
