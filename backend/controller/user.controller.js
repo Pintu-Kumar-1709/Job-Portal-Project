@@ -71,7 +71,7 @@ export const login = async (req, res) => {
         success: false,
       });
     }
-    //checking role is correct or not
+   
     if (role !== user.role) {
       return res.status(400).json({
         message: "You haven't permission for this role ...",
@@ -133,7 +133,7 @@ export const updateProfile = async (req, res) => {
     const { fullName, email, phoneNumber, bio, skills } = req.body;
 
     const file = req.file;
-    //cloudinary
+   
     const fileUri = getDataUri(file);
     const cloudresponse = await cloudinary.uploader.upload(fileUri.content);
 
@@ -142,7 +142,7 @@ export const updateProfile = async (req, res) => {
       skillsArray = skills.split(",");
     }
 
-    const userId = req.id; //middlewares authenticate
+    const userId = req.id; 
 
     let user = await User.findById(userId);
 
@@ -152,7 +152,7 @@ export const updateProfile = async (req, res) => {
         success: false,
       });
     }
-    // updating data
+    
 
     if (fullName) user.fullName = fullName;
     if (email) user.email = email;
@@ -160,7 +160,7 @@ export const updateProfile = async (req, res) => {
     if (bio) user.profile.bio = bio;
     if (skills) user.profile.skills = skillsArray;
 
-    // resume section will come here
+    
     if(cloudresponse){
       user.profile.resume = cloudresponse.secure_url;
       user.profile.resumeOriginalName = file.originalname;
