@@ -7,7 +7,6 @@ import {
   RiMailSendLine,
   RiRedditFill,
 } from "react-icons/ri";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -59,9 +58,9 @@ const Footer = () => {
               {socials.map((item, i) => (
                 <motion.a
                   key={i}
-                  href={item.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{
                     scale: 1.1,
                     backgroundColor: "rgba(66, 237, 197, 0.1)",
@@ -126,7 +125,7 @@ const Footer = () => {
                   value="babusajan1886@gmail.com"
                   className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-sm outline-none cursor-default text-gray-300"
                 />
-                
+
                 <a
                   href="mailto:babusajan1886@gmail.com"
                   className="absolute right-2 top-1.5 p-1.5 bg-[#42edc5] text-black rounded-lg hover:scale-105 transition-transform flex items-center justify-center"

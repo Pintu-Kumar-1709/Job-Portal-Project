@@ -75,7 +75,6 @@ const Navbar = () => {
           </ul>
           {!user ? (
             <div className="flex items-center gap-3">
-              {/* Login Button */}
               <Link to="/login">
                 <Button
                   variant="ghost"
@@ -86,7 +85,6 @@ const Navbar = () => {
                 </Button>
               </Link>
 
-              {/* Signup Button */}
               <Link to="/signup">
                 <Button className="h-9 px-5 rounded-2xl bg-teal-600 text-white hover:bg-teal-500 flex items-center gap-2 shadow-sm cursor-pointer">
                   <UserPlus className="h-4 w-4" />
