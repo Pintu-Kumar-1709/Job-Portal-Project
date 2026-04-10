@@ -1,6 +1,6 @@
 import { Job } from "../models/job.model.js";
 
-//admin posts a job
+
 export const postJob = async (req, res) => {
   try {
     const {
@@ -16,7 +16,7 @@ export const postJob = async (req, res) => {
     } = req.body;
     const userId = req.id;
 
-    //validations
+   
     if (
       !title ||
       !description ||
@@ -42,9 +42,8 @@ export const postJob = async (req, res) => {
       jobType,
       experienceLevel: experience,
       salary: Number(salary),
-      companyId: companyId, //aha pr id hua hai phle only compnay tha
-      // created_by: companyId,// ye hai original
-      created_by: userId, //ye hai gpt suggested
+      companyId: companyId, 
+      created_by: userId, 
     });
     return res.status(201).json({
       message: "New Job created successfully...",
@@ -118,10 +117,7 @@ export const getJobById = async (req, res) => {
   }
 };
 
-// till now all the jobs for students
 
-/*****************************************/
-//admin till now how much jobs created
 
 export const getAdminJobs = async (req, res) => {
   try {
