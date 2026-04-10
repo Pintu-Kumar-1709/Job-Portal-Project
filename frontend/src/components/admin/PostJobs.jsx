@@ -40,7 +40,7 @@ const PostJobs = () => {
 
   const selectChangeHandler = (value) => {
     const selectedCompany = companies.find(
-      (company) => company.name.toLowerCase() === value
+      (company) => company.name.toLowerCase() === value,
     );
     setInput({ ...input, companyId: selectedCompany._id });
   };
@@ -76,7 +76,6 @@ const PostJobs = () => {
     <>
       <Navbar />
 
-      {/* FULL SCREEN LOADER */}
       {loading && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
           <div className="bg-zinc-900 p-6 rounded-xl flex items-center gap-3">
@@ -97,7 +96,6 @@ const PostJobs = () => {
             bg-zinc-900
           "
         >
-          {/* Heading */}
           <div className="mb-8">
             <h1 className="text-2xl font-semibold text-white">
               Post a New Job
@@ -107,7 +105,6 @@ const PostJobs = () => {
             </p>
           </div>
 
-          {/* Form Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <Label className="text-gray-300">Job Title</Label>
@@ -197,7 +194,6 @@ const PostJobs = () => {
               />
             </div>
 
-            {/* COMPANY SELECT */}
             <div>
               <Label className="text-gray-300">Company</Label>
               <Select onValueChange={selectChangeHandler}>
@@ -220,7 +216,6 @@ const PostJobs = () => {
             </div>
           </div>
 
-          {/* BUTTON */}
           <div className="flex flex-col items-end mt-10 gap-2">
             <Button
               type="submit"
