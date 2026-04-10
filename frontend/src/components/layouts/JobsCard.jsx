@@ -38,7 +38,6 @@ const JobsCard = ({ job }) => {
       transition={{ duration: 0.3 }}
       className="p-4 rounded-2xl bg-[#1b1b1b] border border-[#2a2a2a] hover:border-[#088F8F]/50 hover:shadow-[0_0_20px_rgba(8,143,143,0.1)] transition-all duration-300 cursor-pointer shadow-md group"
     >
-      {/* Top Row */}
       <div className="flex items-center justify-between text-gray-400 text-sm">
         <p className="font-medium text-gray-500">{timeAgo(job?.createdAt)}</p>
 
@@ -51,7 +50,6 @@ const JobsCard = ({ job }) => {
         </Button>
       </div>
 
-      {/* Logo + Company */}
       <div className="flex items-center gap-4 mt-4">
         <div className="p-2 rounded-xl bg-[#1a1a1a] border border-[#2a2a2a] group-hover:border-[#088F8F] transition-colors">
           <Avatar className="h-12 w-12">
@@ -61,7 +59,6 @@ const JobsCard = ({ job }) => {
 
         <div>
           <h1 className="text-lg font-bold text-gray-100 group-hover:text-[#42edc5] transition-colors">
-            {/* FIX: key 'companyName' ki jagah 'name' use karein */}
             {job?.companyId?.name || "Unknown Company"}
           </h1>
           <p className="text-gray-500 flex items-center gap-1 text-sm">
@@ -71,7 +68,6 @@ const JobsCard = ({ job }) => {
         </div>
       </div>
 
-      {/* Title + Description */}
       <div className="mt-4">
         <h1 className="font-bold text-xl text-white tracking-tight">
           {job?.title}
@@ -81,7 +77,6 @@ const JobsCard = ({ job }) => {
         </p>
       </div>
 
-      {/* Badges */}
       <div className="flex flex-wrap items-center gap-2 mt-5">
         <Badge className="bg-[#088F8F]/10 text-[#088F8F] border border-[#088F8F]/20 rounded-lg px-2 py-1">
           {job?.position} Position
@@ -94,7 +89,6 @@ const JobsCard = ({ job }) => {
         </Badge>
       </div>
 
-      {/* Buttons */}
       <div className="flex items-center gap-3 mt-6">
         <Button
           className="flex-1 bg-[#088F8F] hover:bg-[#066d6d] text-white rounded-xl font-bold transition-all active:scale-95"

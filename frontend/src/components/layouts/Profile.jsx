@@ -21,7 +21,7 @@ const skills = [
 const isResume = true;
 
 const Profile = () => {
-  useGetAppliedJobs()
+  useGetAppliedJobs();
   const [open, setOpen] = useState(false);
   const { user } = useSelector((store) => store.auth);
   return (
@@ -29,9 +29,7 @@ const Profile = () => {
       <Navbar />
 
       <div className="max-w-5xl mx-auto my-10 px-6">
-        {/* PROFILE MAIN CARD */}
         <div className="rounded-3xl bg-[#111111]/70 backdrop-blur-xl border border-white/10 p-8 shadow-2xl">
-          {/* ─── Top Profile Info ─────────────────────────────────────── */}
           <div className="flex items-center justify-between flex-wrap gap-6">
             <div className="flex items-center gap-6">
               <Avatar className="h-24 w-24 border border-white/20 shadow-md">
@@ -59,7 +57,6 @@ const Profile = () => {
             </Button>
           </div>
 
-          {/* ─── Contact Section ─────────────────────────────────────── */}
           <div className="mt-6 space-y-3">
             <div className="flex items-center gap-3">
               <Mail size={18} className="text-gray-300" />
@@ -72,7 +69,6 @@ const Profile = () => {
             </div>
           </div>
 
-          {/* ─── Skills ─────────────────────────────────────────────── */}
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-2">Skills</h2>
 
@@ -92,7 +88,6 @@ const Profile = () => {
             )}
           </div>
 
-          {/* ─── Resume ─────────────────────────────────────────────── */}
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-2">Resume</h2>
 
@@ -110,7 +105,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* ─── Applied Jobs Section ─────────────────────────────────── */}
         <div className="mt-10 rounded-3xl bg-[#111111]/70 backdrop-blur-xl border border-white/10 p-8 shadow-xl">
           <h1 className="font-bold text-2xl mb-6">Applied Jobs</h1>
           <AppliedJobDetails />

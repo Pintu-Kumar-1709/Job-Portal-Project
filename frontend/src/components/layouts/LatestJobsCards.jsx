@@ -8,7 +8,6 @@ const LatestJobsCards = ({ job }) => {
       onClick={() => navigate(`/description/${job._id}`)}
       className="p-6 rounded-xl bg-[#1b1b1b] border border-[#2a2a2a] hover:border-teal-600 hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-md"
     >
-      {/* Company Info */}
       <div className="mb-4">
         <h2 className="text-lg font-semibold text-gray-200">
           {job?.companyId?.name || "Unknown Company"}
@@ -19,7 +18,6 @@ const LatestJobsCards = ({ job }) => {
         </p>
       </div>
 
-      {/* Job Title and Description */}
       <div>
         <h1 className="text-xl font-bold text-white">{job?.title}</h1>
 
@@ -28,7 +26,6 @@ const LatestJobsCards = ({ job }) => {
         </p>
       </div>
 
-      {/* Badges */}
       <div className="flex flex-wrap items-center gap-3 mt-6">
         <Badge className="bg-[#2f2f2f] text-gray-300 px-3 py-1 border border-[#3a3a3a]">
           {job?.position} Position
@@ -43,7 +40,6 @@ const LatestJobsCards = ({ job }) => {
         </Badge>
       </div>
 
-      {/* Apply Button */}
       <button className="w-full mt-6 bg-teal-600/80 hover:bg-teal-600 text-white py-2.5 rounded-lg font-medium transition-all">
         Apply Now
       </button>

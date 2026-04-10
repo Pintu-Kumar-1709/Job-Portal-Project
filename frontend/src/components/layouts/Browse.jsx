@@ -22,7 +22,6 @@ const Browse = () => {
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 py-10">
-        {/* Title Animation */}
         <Motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +32,6 @@ const Browse = () => {
           <span className="text-[#0ea5e9]">({allJobs.length})</span>
         </Motion.h1>
 
-        {/* Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {allJobs.length > 0 ? (

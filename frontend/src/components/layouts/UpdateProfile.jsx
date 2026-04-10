@@ -61,7 +61,7 @@ const UpdateProfile = ({ open, setOpen }) => {
             "Content-Type": "multipart/form-data",
           },
           withCredentials: true,
-        }
+        },
       );
       if (res.data.success) {
         dispatch(setUser(res.data.user));
@@ -86,7 +86,6 @@ const UpdateProfile = ({ open, setOpen }) => {
         </DialogHeader>
 
         <form onSubmit={submitHandler} className="space-y-4 mt-4">
-          {/* Name */}
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
             <Input
@@ -99,7 +98,6 @@ const UpdateProfile = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Email */}
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
             <Input
@@ -112,7 +110,6 @@ const UpdateProfile = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* Contact */}
           <div className="space-y-2">
             <Label htmlFor="contact">Contact</Label>
             <Input
@@ -125,7 +122,6 @@ const UpdateProfile = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* bio */}
           <div className="space-y-2">
             <Label htmlFor="bio">Bio</Label>
             <Input
@@ -138,7 +134,6 @@ const UpdateProfile = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* skills */}
           <div className="space-y-2">
             <Label htmlFor="skills">Skills</Label>
             <Input
@@ -151,7 +146,6 @@ const UpdateProfile = ({ open, setOpen }) => {
             />
           </div>
 
-          {/* resume */}
           <div className="space-y-2">
             <Label htmlFor="file">Resume</Label>
             <Input

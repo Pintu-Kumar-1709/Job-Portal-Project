@@ -3,7 +3,7 @@ import Navbar from "../shared/Navbar";
 import JobsCard from "./JobsCard";
 import RefineCards from "./RefineCards";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // AnimatePresence add kiya
+import { motion, AnimatePresence } from "framer-motion";
 
 const JobsPage = () => {
   const { allJobs, searchedQuery } = useSelector((store) => store.job);
@@ -29,7 +29,6 @@ const JobsPage = () => {
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-5 mt-10 grid grid-cols-1 md:grid-cols-4 gap-10">
-        {/* Left Filter Section */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -38,7 +37,6 @@ const JobsPage = () => {
           <RefineCards />
         </motion.div>
 
-        {/* Job Listing Section */}
         <div className="md:col-span-3">
           {filterJobs.length === 0 ? (
             <motion.span
@@ -52,7 +50,6 @@ const JobsPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <AnimatePresence mode="popLayout">
                 {" "}
-                {/* Smooth filtering ke liye */}
                 {filterJobs.map((job, index) => (
                   <motion.div
                     key={job?._id}

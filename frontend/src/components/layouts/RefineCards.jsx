@@ -82,7 +82,6 @@ const RefineCards = () => {
               </div>
             ))}
 
-            {/* HR after each category */}
             <hr className="mt-4 border-gray-300" />
           </div>
         ))}

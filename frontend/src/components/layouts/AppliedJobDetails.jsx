@@ -13,32 +13,6 @@ import { useSelector } from "react-redux";
 const AppliedJobDetails = () => {
   const { allAppliedJobs } = useSelector((store) => store.job);
   const appliedJobs = allAppliedJobs || [];
-  // const data = [
-  //   {
-  //     date: "06-10-2024",
-  //     role: "Frontend Developer",
-  //     company: "Tech Corp",
-  //     status: "Rejected",
-  //   },
-  //   {
-  //     date: "19-08-2024",
-  //     role: "Backend Developer",
-  //     company: "CloudSoft",
-  //     status: "Selected",
-  //   },
-  //   {
-  //     date: "24-07-2024",
-  //     role: "UI/UX Designer",
-  //     company: "PixelWorks",
-  //     status: "Pending",
-  //   },
-  //   {
-  //     date: "15-06-2024",
-  //     role: "Full Stack Developer",
-  //     company: "NextGen Labs",
-  //     status: "Interviewing",
-  //   },
-  // ];
 
   const getStatusColor = (status) => {
     switch (status) {

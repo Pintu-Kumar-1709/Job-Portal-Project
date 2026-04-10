@@ -17,7 +17,6 @@ const HeroSection = () => {
   return (
     <div className="text-center w-full px-4">
       <div className="flex flex-col items-center gap-6 py-14">
-        {/* Tag */}
         <Motion.span
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,7 +27,6 @@ const HeroSection = () => {
           <span className="text-teal-500 font-semibold">AntiX</span>
         </Motion.span>
 
-        {/* Heading */}
         <Motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -42,7 +40,6 @@ const HeroSection = () => {
           </span>
         </Motion.h1>
 
-        {/* Subtext */}
         <Motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -53,7 +50,6 @@ const HeroSection = () => {
           step in your career.
         </Motion.p>
 
-        {/* Search Bar - Shadcn UI */}
         <Motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
