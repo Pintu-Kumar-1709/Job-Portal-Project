@@ -13,7 +13,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socials = [
-    { icon: RiGithubFill, link: "https://github.com/Pintu-Kumar-1709" },
+    { icon: RiGithubFill, link: "https://github.com/justkmr" },
     {
       icon: RiLinkedinBoxFill,
       link: "https://www.linkedin.com/in/pintu-kumar-12x",
